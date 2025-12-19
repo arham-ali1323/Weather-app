@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -44,3 +45,31 @@ StateMessage.propTypes = {
 };
 
 export default StateMessage;
+=======
+import React from 'react';
+
+const StateMessage = ({ icon, title, description, tone = 'info' }) => {
+  const toneClasses = {
+    info: 'bg-slate-900/80 ring-sky-400/40 text-slate-100',
+    error: 'bg-red-950/80 ring-red-500/40 text-red-50',
+  };
+
+  return (
+    <div
+      className={`w-full rounded-2xl px-4 py-3 ring-1 shadow-soft-xl backdrop-blur-md flex items-start gap-3 text-sm ${
+        toneClasses[tone] || toneClasses.info
+      }`}
+    >
+      <div className="mt-0.5 text-base">
+        {icon || (tone === 'error' ? '⚠️' : 'ℹ️')}
+      </div>
+      <div>
+        <p className="font-medium">{title}</p>
+        {description && <p className="mt-0.5 text-xs opacity-80">{description}</p>}
+      </div>
+    </div>
+  );
+};
+
+export default StateMessage;
+>>>>>>> 924d53e04b3b4293443adedaf40983de8bf4ec1b

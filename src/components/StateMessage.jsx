@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -44,10 +44,6 @@ StateMessage.propTypes = {
   children: PropTypes.node,
 };
 
-export default StateMessage;
-=======
-import React from 'react';
-
 const StateMessage = ({ icon, title, description, tone = 'info' }) => {
   const toneClasses = {
     info: 'bg-slate-900/80 ring-sky-400/40 text-slate-100',
@@ -72,4 +68,3 @@ const StateMessage = ({ icon, title, description, tone = 'info' }) => {
 };
 
 export default StateMessage;
->>>>>>> 924d53e04b3b4293443adedaf40983de8bf4ec1b

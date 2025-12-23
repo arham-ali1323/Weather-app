@@ -36,7 +36,7 @@ const CurrentWeatherCard = ({ weather }) => {
             <WeatherIcon icon={condition?.icon} alt={condition?.description} size={80} />
           </div>
         </div>
-{/* Weather details */}
+{/* Weather details section starts here */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs md:text-sm text-slate-200">
           <div className="space-y-1">
             <p className="text-slate-400">Humidity</p>
@@ -59,6 +59,7 @@ const CurrentWeatherCard = ({ weather }) => {
             </p>
           </div>
         </div>
+        {/* Weather details section ends here */}
       </div>
     </section>
   );

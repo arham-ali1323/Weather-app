@@ -10,6 +10,7 @@ const LayoutShell = ({ theme = {}, children, footer }) => {
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 flex flex-col gap-6">
           {children}
         </main>
+        {/* footer section starts here */}
         {footer && (
           <footer className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             {footer}
